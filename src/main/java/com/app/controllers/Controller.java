@@ -4,6 +4,8 @@ import com.app.threads.Thread1Service;
 import com.app.threads.Thread2Service;
 import com.app.threads.Thread3Service;
 import com.app.threads.Thread4Service;
+import com.app.threads.Thread5Service;
+import com.app.threads.Thread6Service;
 
 public class Controller {
 	/**
@@ -51,7 +53,27 @@ public class Controller {
 			thread3.join();
 			thread4.start();
 			thread4.join();
-		} catch (InterruptedException e) {
+		} catch (Exception e) {
+			// TODO 自動生成された catch ブロック
+			e.printStackTrace();
+		}
+	}
+	
+	/**
+	 * スレッド例外実装
+	 * @param args
+	 */
+	public void excute4(String[] args) {
+		try {
+			Thread5Service t5 = new Thread5Service();
+			Thread6Service t6 = new Thread6Service();			
+			Thread thread5 = new Thread(t5);
+			Thread thread6 = new Thread(t6);
+			thread5.start();
+			thread5.join();
+			thread6.start();
+			thread6.join();
+		} catch (Exception e) {
 			// TODO 自動生成された catch ブロック
 			e.printStackTrace();
 		}
