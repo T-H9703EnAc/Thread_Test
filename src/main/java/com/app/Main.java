@@ -5,8 +5,8 @@ import com.app.controllers.Controller;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO 自動生成されたメソッド・スタブ
-		new Controller().run(args);
+		// new Controller().excute1(args);
+		new Controller().excute2(args);
 	}
 
 }
