@@ -38,7 +38,7 @@ public class Controller {
 	}
 	
 	/**
-	 * スレッド順番実行
+	 * スレッドRunnable実装
 	 * @param args
 	 */
 	public void excute3(String[] args) {
